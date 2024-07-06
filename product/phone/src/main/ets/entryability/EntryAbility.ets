@@ -1,6 +1,19 @@
 import { AbilityConstant, UIAbility, Want } from '@kit.AbilityKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { window } from '@kit.ArkUI';
+import dayjs from 'dayjs';
+import 'dayjs/locale/zh-cn'
+import { Log } from '@abner/log'
+
+dayjs.locale('zh-cn');
+Log.init({
+  tag: "x_log",
+  domain: 0xEC00,
+  close: false,
+  isHilog: true,
+  showLogLocation: true,
+  logSize: 200
+})
 
 export default class EntryAbility extends UIAbility {
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
