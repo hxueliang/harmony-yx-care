@@ -1,1 +1,1 @@
-export { Mine } from "./src/main/ets/components/Mine"
+export * from "./src/main/ets/components"

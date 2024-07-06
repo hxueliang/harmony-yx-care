@@ -1,1 +1,1 @@
-export { Duty } from "./src/main/ets/components/Duty"
+export * from "./src/main/ets/components"
