@@ -9,7 +9,8 @@ export struct EcLoading {
   @Prop
   tip: string = '正在加载中...'
   @Prop
-  icon: ResourceStr = $r('app.media.page_loading')
+  // icon: ResourceStr = $r('app.media.page_loading')
+  icon: ResourceStr = '../../resources/base/media/page_loading.gif'
   wd: number = 65
   ht: number = 20
   // 是否开启图片旋转动画
@@ -68,7 +69,8 @@ export struct EcLoading {
           curve: Curve.FastOutSlowIn
         })
       Text(this.tip)
-        .fontSize($r('app.float.yk_module_title_font_size'))// .fontColor($r('app.color.yk_mid_99'))
+        // .fontSize($r('app.float.yk_module_title_font_size'))// .fontColor($r('app.color.yk_mid_99'))
+        .fontSize('16fp')// .fontColor($r('app.color.yk_mid_99'))
         .fontColor('#fff')
         .fontWeight(500)
         .margin({ top: 18 })

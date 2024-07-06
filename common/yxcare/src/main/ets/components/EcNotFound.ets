@@ -4,12 +4,15 @@ export struct EcNotFound {
 
   build() {
     Column() {
-      Image($r('app.media.ic_zwnr'))
+      // Image($r('app.media.ic_zwnr'))
+      Image('../../resources/base/media/ic_zwnr.png')
         .width(160)
         .height(144)
       Text(this.tip)
-        .fontSize($r('app.float.yk_normal_font_size'))
-        .fontColor($r('app.color.yk_mid_59'))
+        // .fontSize($r('app.float.yk_normal_font_size'))
+        // .fontColor($r('app.color.yk_mid_59'))
+        .fontSize('14fp')
+        .fontColor('#595959')
         .margin({ top: 20 })
     }
   }

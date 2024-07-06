@@ -18,7 +18,8 @@ export struct EcDeviceTip {
     Column() {
       // 关闭页面
       Row() {
-        Image($r('app.media.btn_clean'))
+        // Image($r('app.media.btn_clean'))
+        Image('../../resources/base/media/btn_clean.png')
           .width(24)
           .aspectRatio(1)
       }
@@ -33,19 +34,22 @@ export struct EcDeviceTip {
 
       // 提示
       Column() {
-        Image(this.type === 'success' ? $r("app.media.img_success") : $r("app.media.img_fail"))
+        Image(this.type === 'success'? '../../resources/base/media/img_success.png' : '../../resources/base/media/img_fail.png')
+        // Image(this.type === 'success' ? $r("app.media.img_success") : $r("app.media.img_fail"))
           .width(152)
           .aspectRatio(1)
           .margin({ top: 20, bottom: 15 })
         Text(this.message)
-          .fontColor($r('app.color.yk_mid_19'))
+          // .fontColor($r('app.color.yk_mid_19'))
+          .fontColor('#191919')
           .fontSize(18)
           .fontWeight(600)
         Button(this.btnText)
           .margin({ top: 50 })
           .width(230)
           .height(40)
-          .backgroundColor($r('app.color.yk_main_color'))
+          // .backgroundColor($r('app.color.yk_main_color'))
+          .backgroundColor('#00C4B3')
           .onClick(() => {
             if (this.url) {
               router.pushUrl({ url: this.url }, () => {
@@ -64,6 +68,7 @@ export struct EcDeviceTip {
     .width('100%')
     .padding({ top: this.topHeight })
     // .height('100%')
-    .backgroundColor($r('app.color.yk_mid_bg'))
+    // .backgroundColor($r('app.color.yk_mid_bg'))
+    .backgroundColor('#F7F6F9')
   }
 }

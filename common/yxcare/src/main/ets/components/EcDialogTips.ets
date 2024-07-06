@@ -62,7 +62,8 @@ export struct EcDialogTips {
       //  1. 标题
       Row() {
         Text(this.title)
-          .fontColor($r('app.color.yk_mid_19'))
+          // .fontColor($r('app.color.yk_mid_19'))#191919
+          .fontColor('#191919')
           .fontSize(18)
           .fontWeight(500)
       }
@@ -76,7 +77,8 @@ export struct EcDialogTips {
 
       // 分割线
       Divider()
-        .color($r('app.color.yk_mid_line'))
+        // .color($r('app.color.yk_mid_line'))
+        .color('#E8E8E8')
         .margin({ left: 15, right: 15 })
       // 按钮
       Row() {
@@ -86,24 +88,30 @@ export struct EcDialogTips {
             // this.controller.close()
             this.cancelButton?.cb && this.cancelButton?.cb()
           })
-          .fontSize($r('app.float.yk_module_title_font_size'))
+            // .fontSize($r('app.float.yk_module_title_font_size'))
+            .fontSize('16fp')
           .backgroundColor('transparent')
-          .fontColor(this.cancelButton?.color || $r('app.color.yk_mid_59'))
+          // .fontColor(this.cancelButton?.color || $r('app.color.yk_mid_59'))
+          .fontColor(this.cancelButton?.color || '#595959')
+
         // 确定
         if (this.confirmButton?.text) {
           Divider()
             .vertical(true)
             .height(24)
-            .color($r('app.color.yk_mid_99'))
+          // .color($r('app.color.yk_mid_99'))
+          .color('#999999')
 
           Button(this.confirmButton?.text)
             .onClick(() => {
               // this.controller.close()
               this.confirmButton?.cb && this.confirmButton?.cb()
             })
-            .fontSize($r('app.float.yk_module_title_font_size'))
+              // .fontSize($r('app.float.yk_module_title_font_size'))
+              .fontSize('16fp')
             .backgroundColor('transparent')
-            .fontColor(this.confirmButton?.color || $r('app.color.yk_main_color'))
+            // .fontColor(this.confirmButton?.color || $r('app.color.yk_main_color'))
+            .fontColor(this.confirmButton?.color || '#00C4B3')
         }
       }
       .width('100%')

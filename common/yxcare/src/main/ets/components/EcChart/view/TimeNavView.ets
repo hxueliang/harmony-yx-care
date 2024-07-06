@@ -26,7 +26,8 @@ export struct TimeNavView {
   build() {
     RelativeContainer() {
       RelativeContainer() {
-        Image($r("app.media.ic_arrow_left"))
+        // Image($r("app.media.ic_arrow_left"))
+        Image('../../../../resources/base/media/ic_arrow_left.png')
           .id("image_left")
           .width(7)
           .height(14)
@@ -70,7 +71,9 @@ export struct TimeNavView {
         })
         .id("text")
 
-      Image($r("app.media.ic_down"))
+      Image('')
+        // Image($r("app.media.ic_down"))
+        Image('../../../../resources/base/media/ic_down.png')
         .width(12)
         .aspectRatio(1.4)
         .id("image_arrow")
@@ -84,7 +87,8 @@ export struct TimeNavView {
         .margin({ left: 9 })
 
       RelativeContainer() {
-        Image($r("app.media.ic_arrow_right"))
+        // Image($r("app.media.ic_arrow_right"))
+        Image('../../../../resources/base/media/ic_arrow_right.png')
           .width(7)
           .height(14)
           .id("image_right")
