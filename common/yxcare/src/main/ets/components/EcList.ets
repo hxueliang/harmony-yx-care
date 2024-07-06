@@ -141,6 +141,7 @@
  }
  */
 import promptAction from '@ohos.promptAction'
+import { ResManager } from '../utils'
 
 @Component
 export struct EcList {
@@ -189,8 +190,8 @@ export struct EcList {
     if (this.finished) {
       Row() {
         Text(this.finishedText)
-          .fontColor($r('app.color.yk_mid_99'))
-          .fontSize($r('app.float.yk_normal_font_size'))
+          .fontColor(ResManager.EC_MID_99)
+          .fontSize(ResManager.EC_NORMAL_FS)
       }
       .width('100%')
       .height(50)
@@ -202,8 +203,8 @@ export struct EcList {
             .width(24)
             .margin({ right: 5 })
           Text(this.loadingText)
-            .fontColor($r('app.color.yk_mid_59'))
-            .fontSize($r('app.float.yk_normal_font_size'))
+            .fontColor(ResManager.EC_MID_59)
+            .fontSize(ResManager.EC_NORMAL_FS)
         }
         .width('100%')
         .height(50)
@@ -230,15 +231,15 @@ export struct EcList {
     Row() {
       Progress({ value: 0, total: 100, type: ProgressType.Ring })
         .width(20)
-        .color($r('app.color.yk_main_color'))
+        .color(ResManager.EC_MAIN_COLOR)
         .style({
           strokeWidth: 20,
           status: this.refreshStatus === RefreshStatus.Refresh ? ProgressStatus.LOADING : ProgressStatus.PROGRESSING
         })
         .margin({ right: 10 })
       Text(this.refreshStatusTxt())
-        .fontColor($r('app.color.yk_mid_59'))
-        .fontSize($r('app.float.yk_normal_font_size'))
+        .fontColor(ResManager.EC_MID_59)
+        .fontSize(ResManager.EC_NORMAL_FS)
     }
     .margin(30)
   }

@@ -2,6 +2,7 @@
  * 全屏 loading 提示
  */
 import display from '@ohos.display';
+import { ResManager } from '../utils';
 
 @Component
 @CustomDialog
@@ -9,7 +10,7 @@ export struct EcLoading {
   @Prop
   tip: string = '正在加载中...'
   @Prop
-  icon: ResourceStr = $r('app.media.page_loading')
+  icon: ResourceStr = ResManager.PAGE_LOADING
   wd: number = 65
   ht: number = 20
   // 是否开启图片旋转动画
@@ -68,7 +69,7 @@ export struct EcLoading {
           curve: Curve.FastOutSlowIn
         })
       Text(this.tip)
-        .fontSize($r('app.float.yk_module_title_font_size'))// .fontColor($r('app.color.yk_mid_99'))
+        .fontSize(ResManager.EC_MODULE_TITLE_FS)// .fontColor($r('app.color.yk_mid_99'))
         .fontColor('#fff')
         .fontWeight(500)
         .margin({ top: 18 })

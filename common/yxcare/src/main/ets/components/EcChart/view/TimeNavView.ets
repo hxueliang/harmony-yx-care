@@ -1,6 +1,7 @@
 import Config from '../constants/Config'
 import { TimeMode } from '../constants/TimeMode'
 import window from '@ohos.window';
+import { ResManager } from '../../../utils';
 
 let context = getContext(this);
 
@@ -26,7 +27,7 @@ export struct TimeNavView {
   build() {
     RelativeContainer() {
       RelativeContainer() {
-        Image($r("app.media.ic_arrow_left"))
+        Image(ResManager.IC_ARROW_LEFT)
           .id("image_left")
           .width(7)
           .height(14)
@@ -70,7 +71,7 @@ export struct TimeNavView {
         })
         .id("text")
 
-      Image($r("app.media.ic_down"))
+      Image(ResManager.IC_DOWN)
         .width(12)
         .aspectRatio(1.4)
         .id("image_arrow")
@@ -84,7 +85,7 @@ export struct TimeNavView {
         .margin({ left: 9 })
 
       RelativeContainer() {
-        Image($r("app.media.ic_arrow_right"))
+        Image(ResManager.IC_ARROW_RIGHT)
           .width(7)
           .height(14)
           .id("image_right")

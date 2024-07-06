@@ -26,6 +26,8 @@
  alignment: DialogAlignment.Center
  })
  */
+import { ResManager } from '../utils'
+
 class ButtonConfig {
   text: string = '我知道了'
   // $r('app.color.yk_mid_59') ｜ $r('app.color.yk_main_color')
@@ -62,7 +64,7 @@ export struct EcDialogTips {
       //  1. 标题
       Row() {
         Text(this.title)
-          .fontColor($r('app.color.yk_mid_19'))
+          .fontColor(ResManager.EC_MID_19)
           .fontSize(18)
           .fontWeight(500)
       }
@@ -76,7 +78,7 @@ export struct EcDialogTips {
 
       // 分割线
       Divider()
-        .color($r('app.color.yk_mid_line'))
+        .color(ResManager.EC_MID_LINE)
         .margin({ left: 15, right: 15 })
       // 按钮
       Row() {
@@ -86,24 +88,24 @@ export struct EcDialogTips {
             // this.controller.close()
             this.cancelButton?.cb && this.cancelButton?.cb()
           })
-          .fontSize($r('app.float.yk_module_title_font_size'))
+          .fontSize(ResManager.EC_MODULE_TITLE_FS)
           .backgroundColor('transparent')
-          .fontColor(this.cancelButton?.color || $r('app.color.yk_mid_59'))
+          .fontColor(this.cancelButton?.color || ResManager.EC_MID_59)
         // 确定
         if (this.confirmButton?.text) {
           Divider()
             .vertical(true)
             .height(24)
-            .color($r('app.color.yk_mid_99'))
+            .color(ResManager.EC_MID_99)
 
           Button(this.confirmButton?.text)
             .onClick(() => {
               // this.controller.close()
               this.confirmButton?.cb && this.confirmButton?.cb()
             })
-            .fontSize($r('app.float.yk_module_title_font_size'))
+            .fontSize(ResManager.EC_MODULE_TITLE_FS)
             .backgroundColor('transparent')
-            .fontColor(this.confirmButton?.color || $r('app.color.yk_main_color'))
+            .fontColor(this.confirmButton?.color || ResManager.EC_MAIN_COLOR)
         }
       }
       .width('100%')

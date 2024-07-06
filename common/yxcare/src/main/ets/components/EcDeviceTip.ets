@@ -1,4 +1,5 @@
 import { router } from '@kit.ArkUI'
+import { ResManager } from '../utils'
 
 @Component
 export struct EcDeviceTip {
@@ -18,7 +19,7 @@ export struct EcDeviceTip {
     Column() {
       // 关闭页面
       Row() {
-        Image($r('app.media.btn_clean'))
+        Image(ResManager.BTN_CLEAN)
           .width(24)
           .aspectRatio(1)
       }
@@ -33,19 +34,19 @@ export struct EcDeviceTip {
 
       // 提示
       Column() {
-        Image(this.type === 'success' ? $r("app.media.img_success") : $r("app.media.img_fail"))
+        Image(this.type === 'success' ? ResManager.IMG_SUCCESS : ResManager.IMG_FAIL)
           .width(152)
           .aspectRatio(1)
           .margin({ top: 20, bottom: 15 })
         Text(this.message)
-          .fontColor($r('app.color.yk_mid_19'))
+          .fontColor(ResManager.EC_MID_19)
           .fontSize(18)
           .fontWeight(600)
         Button(this.btnText)
           .margin({ top: 50 })
           .width(230)
           .height(40)
-          .backgroundColor($r('app.color.yk_main_color'))
+          .backgroundColor(ResManager.EC_MAIN_COLOR)
           .onClick(() => {
             if (this.url) {
               router.pushUrl({ url: this.url }, () => {
@@ -64,6 +65,6 @@ export struct EcDeviceTip {
     .width('100%')
     .padding({ top: this.topHeight })
     // .height('100%')
-    .backgroundColor($r('app.color.yk_mid_bg'))
+    .backgroundColor(ResManager.EC_MID_BG)
   }
 }
