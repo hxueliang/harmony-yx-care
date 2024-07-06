@@ -3,7 +3,7 @@ import { Duty } from '@ec/duty'
 import { Stage } from '@ec/stage'
 import { Mine } from '@ec/mine'
 import { TabBarItem } from '../viewmodel'
-import { windowManager } from '@vx/yxcare'
+import { windowManager } from '@itheima/wing-care'
 
 windowManager.enableFullScreen()
 

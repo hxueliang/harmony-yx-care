@@ -1,4 +1,4 @@
-import { EcList, EcDialogTips } from '@vx/yxcare'
+import { EcList, EcDialogTips } from '@itheima/wing-care'
 import dayjs from 'dayjs'
 import promptAction from '@ohos.promptAction'
 import router from '@ohos.router'

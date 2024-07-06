@@ -1,4 +1,4 @@
-import { EcList, EcNotFound } from '@vx/yxcare'
+import { EcList, EcNotFound } from '@itheima/wing-care'
 import { SearchRecordComp } from '../components/SearchRecordComp'
 import { ImgRecordDialog } from '../components/ImgRecordDialog'
 import { ResManager } from '@hm/basic/Index'

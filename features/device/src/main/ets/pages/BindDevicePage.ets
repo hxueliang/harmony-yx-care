@@ -1,4 +1,4 @@
-import { EcDialogTips } from '@vx/yxcare'
+import { EcDialogTips } from '@itheima/wing-care'
 import router from '@ohos.router'
 import { ResManager } from '@hm/basic/Index'
 import { util } from '@kit.ArkTS'
@@ -70,6 +70,7 @@ struct BindDevicePage {
       }
     }, 1000)
   }
+
   // 2. 产品选择和折叠
   // 加载更多和收起
   toggle(item: UnBindProductItem) {

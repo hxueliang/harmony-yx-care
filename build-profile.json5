@@ -116,10 +116,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "yxcare",
-      "srcPath": "./common/yxcare",
     }
   ]
 }

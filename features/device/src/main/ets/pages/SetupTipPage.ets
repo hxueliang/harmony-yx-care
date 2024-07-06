@@ -1,4 +1,4 @@
-import { EcDeviceTip } from '@vx/yxcare'
+import { EcDeviceTip } from '@itheima/wing-care'
 
 @Entry
 @Component

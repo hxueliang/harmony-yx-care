@@ -1,4 +1,4 @@
-import { EcDialogTips } from '@vx/yxcare'
+import { EcDialogTips } from '@itheima/wing-care'
 import { ResManager } from '@hm/basic/Index'
 
 @Entry

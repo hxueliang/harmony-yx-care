@@ -1,4 +1,4 @@
-import { EcList } from '@vx/yxcare'
+import { EcList } from '@itheima/wing-care'
 import { ResManager } from '@hm/basic/Index'
 
 

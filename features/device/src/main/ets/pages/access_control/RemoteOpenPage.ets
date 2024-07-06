@@ -1,5 +1,5 @@
 import { promptAction } from '@kit.ArkUI';
-import { AVPlayerClass } from '@vx/yxcare';
+import { AVPlayerClass } from '@itheima/wing-care';
 import { ResManager } from '@hm/basic/Index';
 
 @Entry

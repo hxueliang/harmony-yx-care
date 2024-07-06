@@ -1,7 +1,7 @@
 /**
  * 测血糖开始
  */
-import { EcLoading, EcDialogTips } from '@vx/yxcare'
+import { EcLoading, EcDialogTips } from '@itheima/wing-care'
 import { ResManager } from '@hm/basic/Index'
 
 @Entry

@@ -1,4 +1,4 @@
-import { EcDeviceTip } from '@vx/yxcare';
+import { EcDeviceTip } from '@itheima/wing-care';
 import { ResManager } from '@hm/basic/Index';
 import { router } from '@kit.ArkUI';
 

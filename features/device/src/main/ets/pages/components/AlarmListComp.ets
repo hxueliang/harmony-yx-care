@@ -1,5 +1,5 @@
 // 报警设备列表
-import { EcList } from '@vx/yxcare'
+import { EcList } from '@itheima/wing-care'
 import { router } from '@kit.ArkUI'
 import { ResManager } from '@hm/basic/Index'
 

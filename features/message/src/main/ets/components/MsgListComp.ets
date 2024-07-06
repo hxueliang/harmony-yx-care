@@ -1,4 +1,4 @@
-import { EcDialogTips, EcList } from '@vx/yxcare'
+import { EcDialogTips, EcList } from '@itheima/wing-care'
 import promptAction from '@ohos.promptAction'
 import { ResManager } from '@hm/basic/Index'
 import { MsgItemComp } from './MsgItemComp'

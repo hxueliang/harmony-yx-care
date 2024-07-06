@@ -1,5 +1,5 @@
 import { ResManager } from '@hm/basic/Index'
-import { EcDialogTips } from '@vx/yxcare'
+import { EcDialogTips } from '@itheima/wing-care'
 
 @Component
 export struct MsgItemComp {

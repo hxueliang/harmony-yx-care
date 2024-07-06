@@ -1,4 +1,4 @@
-import { EcList, EcNotFound } from '@vx/yxcare'
+import { EcList, EcNotFound } from '@itheima/wing-care'
 import router from '@ohos.router'
 import { ElderSelItemComp } from './components/ElderSelItemComp'
 import { ResManager } from '@hm/basic/Index'

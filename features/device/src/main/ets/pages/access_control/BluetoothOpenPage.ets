@@ -1,5 +1,5 @@
 import { ResManager } from '@hm/basic'
-import { AVPlayerClass } from '@vx/yxcare'
+import { AVPlayerClass } from '@itheima/wing-care'
 
 @Entry
 @Component
