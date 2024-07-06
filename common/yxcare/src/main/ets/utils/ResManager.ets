@@ -1,37 +1,37 @@
 export class ResManager {
   // 颜色
-  static EC_MAIN_COLOR = $r('app.color.ec_main_color')
-  static EC_SUB_BLUE = $r('app.color.ec_sub_blue')
-  static EC_SUB_GREEN = $r('app.color.ec_sub_green')
-  static EC_SUB_YELLOW = $r('app.color.ec_sub_yellow')
-  static EC_SUB_RED = $r('app.color.ec_sub_red')
-  static EC_MID_19 = $r('app.color.ec_mid_19')
-  static EC_MID_59 = $r('app.color.ec_mid_59')
-  static EC_MID_99 = $r('app.color.ec_mid_99')
-  static EC_MID_WHITE = $r('app.color.ec_mid_white')
-  static EC_MID_BLACK = $r('app.color.ec_mid_black')
-  static EC_MID_BG = $r('app.color.ec_mid_bg')
-  static EC_MID_LINE = $r('app.color.ec_mid_line')
+  static EC_MAIN_COLOR = "#00C4B3"
+  static EC_SUB_BLUE = "#0698FF"
+  static EC_SUB_GREEN = "#27BA9B"
+  static EC_SUB_YELLOW = "#FFAB2E"
+  static EC_SUB_RED = "#E34D59"
+  static EC_MID_19 = "#191919"
+  static EC_MID_59 = "#595959"
+  static EC_MID_99 = "#999999"
+  static EC_MID_WHITE = "#ffffff"
+  static EC_MID_BLACK = "#000"
+  static EC_MID_BG = "#F7F6F9"
+  static EC_MID_LINE = "#E8E8E8"
   // 字体
-  static EC_VP_TEN = $r('app.float.ec_vp_ten')
-  static EC_CONTENT_SPACE = $r('app.float.ec_content_space')
-  static EC_MICRO_FS = $r('app.float.ec_micro_font_size')
-  static EC_BIG_TITLE_FS = $r('app.float.ec_big_title_font_size')
-  static EC_PAGE_TITLE_FS = $r('app.float.ec_page_title_font_size')
-  static EC_MODULE_TITLE_FS = $r('app.float.ec_module_title_font_size')
-  static EC_NORMAL_FS = $r('app.float.ec_normal_font_size')
-  static EC_ARD_FONT_SIZE = $r('app.float.ec_ard_font_size')
-  static EC_SMALL_FS = $r('app.float.ec_small_font_size')
-  static EC_NORMAL_RD = $r('app.float.ec_normal_radius')
+  static EC_VP_TEN = "10vp"
+  static EC_CONTENT_SPACE = "15vp"
+  static EC_MICRO_FS = "10fp"
+  static EC_BIG_TITLE_FS = "24fp"
+  static EC_PAGE_TITLE_FS = "20fp"
+  static EC_MODULE_TITLE_FS = "16fp"
+  static EC_NORMAL_FS = "14fp"
+  static EC_ARD_FONT_SIZE = "13fp"
+  static EC_SMALL_FS = "12fp"
+  static EC_NORMAL_RD = "8vp"
   // 图片
-  static BTN_CLEAN = $r('app.media.btn_clean')
-  static IC_ARROW_LEFT = $r('app.media.ic_arrow_left')
-  static IC_ARROW_RIGHT = $r('app.media.ic_arrow_right')
-  static IC_DOWN = $r('app.media.ic_down')
-  static IC_ZWNR = $r("app.media.ic_zwnr")
-  static IMG_FAIL = $r('app.media.img_fail')
-  static IMG_SUCCESS = $r('app.media.img_success')
-  static PAGE_LOADING = $r('app.media.page_loading')
+  static BTN_CLEAN = '' // $r('app.media.btn_clean')
+  static IC_ARROW_LEFT = '' // $r('app.media.ic_arrow_left')
+  static IC_ARROW_RIGHT = '' // $r('app.media.ic_arrow_right')
+  static IC_DOWN = '' // $r('app.media.ic_down')
+  static IC_ZWNR = '' // $r("app.media.ic_zwnr")
+  static IMG_FAIL = '' // $r('app.media.img_fail')
+  static IMG_SUCCESS = '' // $r('app.media.img_success')
+  static PAGE_LOADING = '' // $r('app.media.page_loading')
   // 间距
   static SIZE_GUTTER_LG = 15
   static SIZE_GUTTER_MD = 10
